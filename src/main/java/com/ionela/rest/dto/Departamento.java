@@ -82,4 +82,10 @@ public class Departamento {
 		this.empleado = empleado;
 	}
 
+	@Override
+	public String toString() {
+		return "Departamento [id=" + id + ", nombre=" + nombre + ", presupuesto=" + presupuesto + ", empleado="
+				+ empleado + "]";
+	}
+
 }
