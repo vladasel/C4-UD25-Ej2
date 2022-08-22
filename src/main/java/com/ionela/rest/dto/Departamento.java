@@ -25,7 +25,7 @@ public class Departamento {
 	private int presupuesto;
 
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "departamento")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "departament")
 	private List<Empleado> empleado;
 
 	public Departamento(Long id, String nombre, int presupuesto) {
