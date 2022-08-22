@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Departamento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long codigo;
+	private Long id;
 	@Column
 	private String nombre;
 	@Column
@@ -28,8 +28,8 @@ public class Departamento {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "departamento")
 	private List<Empleado> empleado;
 
-	public Departamento(Long codigo, String nombre, int presupuesto) {
-		this.codigo = codigo;
+	public Departamento(Long id, String nombre, int presupuesto) {
+		this.id = id;
 		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 
@@ -43,12 +43,12 @@ public class Departamento {
 		this.presupuesto = presupuesto;
 	}
 
-	public Long getCodigo() {
-		return codigo;
+	public Long getId() {
+		return id;
 	}
 
-	public void setCodigo(Long codigo) {
-		this.codigo = codigo;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNombre() {
