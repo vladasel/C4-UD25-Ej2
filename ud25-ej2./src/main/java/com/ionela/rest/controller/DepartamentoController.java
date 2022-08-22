@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.ionela.rest.dto.Departamento;
-import com.ionela.rest.dto.Empleado;
 import com.ionela.rest.service.DepartamentoServiceImpl;
 
+@RestController
+@RequestMapping("/api")
 public class DepartamentoController {
 	@Autowired
 	DepartamentoServiceImpl departamentoServideImpl;

@@ -3,10 +3,11 @@ package com.ionela.rest.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ionela.rest.dao.IEmpleadoDAO;
 import com.ionela.rest.dto.Empleado;
-
+@Service
 public class EmpleadoServiceImpl implements IEmpleadoService {
 	@Autowired
 	IEmpleadoDAO iEmpleadoDAO;

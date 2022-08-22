@@ -42,6 +42,11 @@ public class Departamento {
 		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 	}
+	public Departamento(Long id) {
+		
+		this.id = id;
+	}
+
 
 	public Long getId() {
 		return id;
